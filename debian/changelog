@@ -1,0 +1,45 @@
+ros-indigo-roch-navigation (1.0.8-0trusty) trusty; urgency=high
+
+  * Remove some not uesd maps.
+
+ -- Carl <wzhang@softrobtech.com>  Sun, 22 Jan 2017 16:00:00 -0000
+
+ros-indigo-roch-navigation (1.0.7-0trusty) trusty; urgency=high
+
+
+
+ -- Carl <wzhang@softrobtech.com>  Sat, 21 Jan 2017 16:00:00 -0000
+
+ros-indigo-roch-navigation (1.0.6-0trusty) trusty; urgency=high
+
+
+
+ -- Carl <wzhang@softrobtech.com>  Mon, 16 Jan 2017 16:00:00 -0000
+
+ros-indigo-roch-navigation (0.0.4-0trusty) trusty; urgency=high
+
+  * Modify all launch files for adjust structres.
+  * For now can just use one sensor for navigation that RGDB sensor or lidar.
+
+ -- Carl <wzhang@softrobtech.com>  Mon, 16 Jan 2017 16:00:00 -0000
+
+ros-indigo-roch-navigation (0.0.3-0trusty) trusty; urgency=high
+
+  * Modify move_base.launch can load sensors params files
+  * Add navigation of lidar
+
+ -- Carl <wzhang@softrobtech.com>  Sun, 13 Nov 2016 16:00:00 -0000
+
+ros-indigo-roch-navigation (0.0.2-0trusty) trusty; urgency=high
+
+  * Create param for sensors
+
+ -- Carl <wzhang@softrobtech.com>  Fri, 04 Nov 2016 16:00:00 -0000
+
+ros-indigo-roch-navigation (0.0.1-0trusty) trusty; urgency=high
+
+  * Create base freamwork for navigation
+
+ -- Carl <wzhang@softrobtech.com>  Thu, 29 Sep 2016 16:00:00 -0000
+
+
