@@ -1,6 +1,11 @@
-roch_teleop
-================
+roch
+=====
 
-roch Teleoperation implementation. 
-This package used to be in roch_apps repository. It has been temporarily migrated into roch 
-because it is useful for both robot(roch_apps) side and user side pc(roch_interactions). 
+Common ROS packages for the SawYer roch, useable for both simulation and
+real robot operation.
+
+ - roch_teleop : Some demos control Roch. 
+ - roch_follower : follow object whatever is.
+ - roch_bringup : Bringup launch files and scripts.
+ - roch_navigation : Navigation configurations and demos.
+
