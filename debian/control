@@ -1,0 +1,12 @@
+Source: ros-indigo-roch-rapps
+Section: misc
+Priority: extra
+Maintainer: Carl <wzhang@softrobtech.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://ros.org/wiki/roch_rapps
+Standards-Version: 3.9.2
+
+Package: ros-indigo-roch-rapps
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-compressed-image-transport, ros-indigo-nodelet, ros-indigo-robot-pose-publisher, ros-indigo-roch-bringup, ros-indigo-roch-follower, ros-indigo-roch-navigation, ros-indigo-roch-teleop, ros-indigo-tf, ros-indigo-topic-tools, ros-indigo-warehouse-ros, ros-indigo-world-canvas-server
+Description: The roch_rapps package for set of 'app manager' apps definition
