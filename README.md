@@ -1,5 +1,12 @@
 # roch_rapps Of Roch Stack Package
 
+
+## Table of Contents
+* [Preparation](#preparation)
+* [Requirements](#requirements)
+* [Installation](#installation)
+* [Usage](#usage)
+
 ## Preparation
 
 Before starting run roch_rapps. There have some problems should be resolved, due to new packages of robotics-in-concert have not release with almost version in 0.10.0, so we should install these by ourselves.
@@ -29,9 +36,13 @@ Stacks & Packages | Version | Document |
 **world_canvas_msgs** | 0.1.0 | [wiki](http://wiki.ros.org/world_canvas_msgs) [github](https://github.com/corot/world_canvas_msgs) |
 
 Add some packages we can using `````apt-get````` for installing following command:
-
-    sudo apt-get install world_canvas_server world_canvas_libs world_canvas_msgs std_capabilities rt_capabilities concert_software_farm rocon_rapps capabilities concert_scheduling concert_services rqt_capabilities
-
+```
+$  sudo apt-get install ros-indigo-world-canvas-server ros-indigo-world-canvas-client-cpp \
+    ros-indigo-world-canvas-client-examples ros-indigo-world-canvas-client-py ros-indigo-world-canvas-utils \
+    ros-indigo-world-canvas-msgs ros-indigo-std-capabilities ros-indigo-rqt-capabilities \
+    ros-indigo-concert-software-farm ros-indigo-capabilities ros-indigo-concert-services  \
+    ros-indigo-concert-scheduling 
+```
 ### Installation
 
 Under these stacks packages we need to install by ourselves:
@@ -46,19 +57,31 @@ Stacks & Packages | version |
 [rocon_tools](https://github.com/robotics-in-concert/rocon_tools) | 0.6.0 & above |
 
 Download these packages into your workspace:
-
-    cd ```<your_catkin_ws>```/src
-    git clone https://github.com/robotics-in-concert/rocon_app_platform
-    git clone https://github.com/robotics-in-concert/rocon_concert
-    git clone https://github.com/robotics-in-concert/rocon_msgs
-    git clone https://github.com/robotics-in-concert/rocon_qt_gui
-    git clone https://github.com/robotics-in-concert/rocon_qt_library
-    git clone https://github.com/robotics-in-concert/rocon_tools
-
+```
+$  cd  <your_catkin_ws>/src
+$  git clone https://github.com/robotics-in-concert/rocon_app_platform
+$  git clone https://github.com/robotics-in-concert/rocon_concert
+$  git clone https://github.com/robotics-in-concert/rocon_msgs
+$  git clone https://github.com/robotics-in-concert/rocon_qt_gui
+$  git clone https://github.com/robotics-in-concert/rocon_tools
+$  git clone https://github.com/robotics-in-concert/rocon_multimaster
+```
 After download these packages, build your ```catkin_ws```:
-
-    cd ```<your_catkin_ws>```
-    catkin_make
-
+```
+$  cd  <your_catkin_ws>
+$  #checkout all required depends installation
+$  rosdep install --from-paths src --ignore-src --rosdistro indigo -y 
+$  catkin_make
+```
 For now you can run ```concert_minimal.launch``` for using rapps of roch.
 
+### Usage
+There is an example for how to use roch_rapps, for now roch_rapps package is differebt old rocon package, due use new package, so you can use following command for checking.
+
+ * `` (#For first ternimal)`` Bringup your Roch
+ 
+   * ```  roslaunch roch_bringup concert_minimal.launch ```
+
+ * `` (#For sencond ternimal)`` Bringup rqt_remocon
+  
+   * ``` rqt_remocon```
