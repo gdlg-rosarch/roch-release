@@ -1,6 +1,11 @@
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Changelog for package roch_follower
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1.0.11 (2017-03-23)
+-------------------
+* Add twist_mux node link.
+* Fixed bug will cause can not promote speed of Roch.
+
 1.0.10 (2017-02-17)
 -------------------
 
@@ -17,11 +22,6 @@ Changelog for package roch_follower
 1.0.6 (2017-01-17)
 -------------------
 * Modify launch file for support Roch r200.
-
-2.1.0 (2013-07-19)
--------------------
-* Catkinized
-* Unexistent include dir removed from package description
 
 
 Previous versions, bugfixing
