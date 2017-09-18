@@ -1,0 +1,12 @@
+Source: ros-kinetic-roch-navigation
+Section: misc
+Priority: extra
+Maintainer: Carl <wzhang@softrobtech.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-roscpp, ros-kinetic-roslaunch, ros-kinetic-sensor-msgs, ros-kinetic-tf
+Homepage: http://ros.org/wiki/roch_navigation
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-roch-navigation
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-amcl, ros-kinetic-base-local-planner, ros-kinetic-dwa-local-planner, ros-kinetic-frontier-exploration, ros-kinetic-gmapping, ros-kinetic-map-server, ros-kinetic-move-base, ros-kinetic-navfn, ros-kinetic-nodelet, ros-kinetic-roch-bringup, ros-kinetic-roch-safety-controller, ros-kinetic-roscpp, ros-kinetic-sensor-msgs, ros-kinetic-tf, ros-kinetic-yocs-cmd-vel-mux
+Description: Autonomous mapping and navigation demos for the SawYer Roch
