@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>roch_bringup</name>
-  <version>1.0.14</version>
+  <version>1.0.15</version>
   <description>SawYer roch installation and integration package</description>
 
   <author email="wzhang@softrobtech.com">Carl</author>
@@ -53,6 +53,7 @@
   <run_depend>robot_state_publisher</run_depend>
   <run_depend>diagnostic_aggregator</run_depend>
   <run_depend>rosbridge_server</run_depend>
+  <run_depend>lms1xx</run_depend>
 
   <export>
   </export>
