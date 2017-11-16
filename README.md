@@ -1,3 +1,32 @@
+## roch (indigo) - 1.0.15-0
+
+The packages in the `roch` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --track indigo --rosdistro indigo roch` on `Thu, 16 Nov 2017 00:53:06 -0000`
+
+These packages were released:
+- `roch`
+- `roch_bringup`
+- `roch_follower`
+- `roch_navigation`
+- `roch_rapps`
+- `roch_teleop`
+
+Version of package(s) in repository `roch`:
+
+- upstream repository: https://github.com/SawYer-Robotics/roch.git
+- release repository: https://github.com/SawYerRobotics-release/roch-release.git
+- rosdistro version: `1.0.14-0`
+- old version: `1.0.14-0`
+- new version: `1.0.15-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.23`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.4.4`
+- vcstools version: `0.1.38`
+
+
 ## roch (kinetic) - 2.0.12-0
 
 The packages in the `roch` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release --track kinetic --ros-distro kinetic roch` on `Mon, 18 Sep 2017 02:44:18 -0000`
