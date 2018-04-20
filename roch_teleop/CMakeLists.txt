@@ -19,9 +19,6 @@ catkin_package(
 add_executable(roch_teleop_joy src/roch_joy.cpp)
 target_link_libraries(roch_teleop_joy ${catkin_LIBRARIES})
 
-add_executable(roch_xbox_joy src/roch_xbox_joy.cpp)
-target_link_libraries(roch_xbox_joy ${catkin_LIBRARIES})
-
 #############
 ## Install ##
 #############
@@ -33,7 +30,7 @@ install(PROGRAMS
 )
 
 ## Mark executables and/or libraries for installation
-install(TARGETS roch_teleop_joy roch_xbox_joy
+install(TARGETS roch_teleop_joy
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
